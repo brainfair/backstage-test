@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+  namespace: default
+  labels:
+    backstage.io/kubernetes-id: 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 
+  template:
+    metadata:
+      labels:
+        app: 
+        backstage.io/kubernetes-id: 
+    spec:
+      containers:
+        - name: container-0
+          image: fdgfdgfdgfdg
+          ports:
+            - containerPort: 80
