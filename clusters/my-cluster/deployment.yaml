@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: default/test
+  namespace: default
+  labels:
+    backstage.io/kubernetes-id: default/test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: default/test
+  template:
+    metadata:
+      labels:
+        app: default/test
+        backstage.io/kubernetes-id: default/test
+    spec:
+      containers:
+        - name: container-0
+          image: asdasdasd
+          ports:
+            - containerPort: 80
