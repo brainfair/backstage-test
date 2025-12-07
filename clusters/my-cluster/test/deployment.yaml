@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test
+  name: 
   namespace: default
   labels:
     backstage.io/kubernetes-id: test
@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: container-0
-          image: test
+          image: 
           ports:
             - containerPort: 80
