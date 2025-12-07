@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: container-0
-          image: test
+          image: asdasdasd:asdsad
           ports:
             - containerPort: 80
